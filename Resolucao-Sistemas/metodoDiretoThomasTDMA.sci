@@ -1,10 +1,10 @@
 clear(); clc()
 printf("*** Gabriel Costa de Moraes ***\n");
 printf("\n * MÉTODO DIRETO: THOMAS (TDMA) SISTEMAS TRIDIAGONAIS *\N")
-a = [0; -1; -1]
-b = [2; 2; 2]
-c = [-1; -1; 0]
-d = [1; 1; 1]
+a = [0; -5; -5; -5]
+b = [20; 15; 15; 19]
+c = [-5; -5; -5; 0]
+d = [1100; 100; 100; 100]
 
 a_original = a
 b_original = b
