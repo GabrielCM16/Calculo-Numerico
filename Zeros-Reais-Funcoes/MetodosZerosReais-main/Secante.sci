@@ -28,6 +28,22 @@ function [xk, k] = secante(f, x0, x1, epsilon1, epsilon2, nMax)
     printf("\nAproximação ""%8.6f"" à raiz, com ""%2.2i"" iterações\n", xk, k);
 endfunction
 
+//printf("PROBLEMA 1 \n");
+//deff('y = f(x)', 'y=162.5*x^3 - 243.75*x^2 + 130*x + 43.75')
+//deff('y = f(x)', 'y = 162.5*x^3 - 243.75*x^2 + 130*x - 43.75')
+//[xk, k] = secante(f, 0, 1.0, 1e-6, 1e-6, 100);
+
+
+//printf("PROBLEMA 2");
+//deff('y = f(u)', 'y = 4*u^3 - 30*u^2 + 85*u - 160')
+//[xk, k] = secante(f, 4, 5.0, 1e-6, 1e-6, 100);
+
+
+printf("PROBLEMA 3\n");
+deff('y = f(d)', 'y = 25*d^2 + log(d) - 1.5')
+[xk, k] = secante(f, 0.3, 0.4, 1e-6, 1e-6, 100);//
+
+
 //-------------Problema 1.1: Obter uma aproximação às raízes das funções----------------
 //1. 𝐟(𝐱) = 𝐱^𝟐 − 𝟑 no intervalo [𝟏; 𝟐], com 𝛜 = 𝟏𝟎**-6
 //printf("PROBLEMA 1.1 NÚMERO 1\n");
@@ -117,8 +133,8 @@ endfunction
 //-------------Problema 2.3: Movimento de material perigoso----------------
 //d=10; 'y = p(t)', 'y = 7*(2.0 - 0.9^t) - d'
 //printf("PROBLEMA 2.3\n");
-deff('y = p(t)', 'y = 7*(2.0 - 0.9^t) - d');
-secante(p, 0, 10, 1e-5, 1e-5, 100);
+//deff('y = p(t)', 'y = 7*(2.0 - 0.9^t) - d');
+//secante(p, 0, 10, 1e-5, 1e-5, 100);
 
 //-------------Problema 2.4: Nível de oxigênio em rio----------------
 //O = 5; deff('y = C(d)', 'y = 10 - 20*(exp(-0.2*d) - exp(-0.75*d)) - O');

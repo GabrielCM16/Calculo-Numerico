@@ -26,6 +26,22 @@ function [xk, k] = newton_raphson(f, f1, a, b, epsilon1, epsilon2, nMax)
     printf("\nAproximação ""%8.6f"" à raiz, com ""%2.2i"" iterações\n\n", xk, k);
 endfunction
 
+//printf("PROBLEMA 1 \n");
+//deff('y = f(x)', 'y = 162.5*x^3 - 243.75*x^2 + 130*x - 43.75')
+//deff('y = f1(x)', 'y = 130 - 487.5*x + 487.5*x^2')
+//[xk, k] = newton_raphson(f, f1, 0, 1.0, 1e-6, 1e-6, 100);
+
+//printf("PROBLEMA 2");
+//deff('y = f(u)', 'y = 4*u^3 - 30*u^2 + 85*u - 160')
+//deff('y = f1(u)', 'y = 85 - 60*u + 12*u^2')
+//[xk, k] = newton_raphson(f, f1, 4, 5.0, 1e-6, 1e-6, 100);
+
+
+printf("PROBLEMA 3\n");
+deff('y = f(d)', 'y = 25*d^2 + log(d) - 1.5')
+deff('y = f1(d)', 'y = 1/d + 50*d')
+[xk, k] = newton_raphson(f, f1, 0.3, 0.4, 1e-6, 1e-6, 100);//
+
 //-------------Problema 1.1: Obter uma aproximação às raízes das funções----------------
 //1. 𝐟(𝐱) = 𝐱^𝟐 − 𝟑 no intervalo [𝟏; 𝟐], com 𝛜 = 𝟏𝟎**-6
 printf("PROBLEMA 1.1 NÚMERO 1\n");

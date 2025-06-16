@@ -36,6 +36,20 @@ function xm = bissecao(f, a, b, epsilon1, epsilon2, nMax)
     printf("Aproximadamente: %8.6f é a raiz, com %2d iterações\n", xm, k);            //marca ponto da //raiz aproximada
 endfunction
 
+
+//printf("PROBLEMA 1 \n");
+//deff('y = f(x)', 'y=162.5*x^3 - 243.75*x^2 + 130*x + 43.75')
+//deff('y = f(x)', 'y = 162.5*x^3 - 243.75*x^2 + 130*x - 43.75')
+ //bissecao(f, 0, 1.0, 1e-6, 1e-6, 100);
+
+//printf("PROBLEMA 2");
+//deff('y = f(u)', 'y = 4*u^3 - 30*u^2 + 85*u - 160')
+//bissecao(f, 4, 5.0, 1e-6, 1e-6, 100);
+
+printf("PROBLEMA 3\n");
+deff('y = f(d)', 'y = 25*d^2 + log(d) - 1.5')
+bissecao(f, 0.3, 0.4, 1e-6, 1e-6, 100);//
+
 //-------------Problema 1.1: Obter uma aproximação às raízes das funções----------------
 //1. 𝐟(𝐱) = 𝐱^𝟐 − 𝟑 no intervalo [𝟏; 𝟐], com 𝛜 = 𝟏𝟎**-6
 //printf("PROBLEMA 1.1 NÚMERO 1\n");

@@ -3,7 +3,7 @@ clear();clc();clf();
 printf("*** Gabriel Costa de Moraes ***\n");
 printf("*** APROXIMAÇÃO PELO MÉTODO DA BISSECÇÃO ***\n")
 
-deff('y = f(x)', 'y=x^3-9*x+3')
+deff('y = f(x)', 'y=162.5*x^3 - 243.75*x^2 + 130*x + 16.25')
 ak = 0.0
 bk = 1.0
 

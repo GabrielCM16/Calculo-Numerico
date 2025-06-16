@@ -2,7 +2,8 @@
 //Alunos: Pedro Miotto Mujica, Thiago Oliveira Dupim, Vinicius Castaman, Gabriel Costa
 //Resolvendo usando o Método da Falsa Posição
 
-clear();
+
+clear();clc();clf();
 h = 300; F = 0.8; D = 14; C = 1200; //constantes exercicio 2.2
 d = 10 //constante exercicio 2.3
 O = 5 //constante exercicio 2.4
@@ -30,6 +31,18 @@ function [xk, k] = falsa_posicao(f, a, b, epsilon1, epsilon2, nMax)
     // Exibir resultado final
     printf("\nAproximação ""%8.6f"" à raiz, com ""%2.2i"" iterações\n", xk, k);
 endfunction
+
+//printf("PROBLEMA 1 \n");
+//deff('y = f(x)', 'y = 162.5*x^3 - 243.75*x^2 + 130*x - 43.75')
+//[xk, k] = falsa_posicao(f, 0, 1.0, 1e-6, 1e-6, 100);
+
+//printf("PROBLEMA 2/n");
+//deff('y = f(u)', 'y = 4*u^3 - 30*u^2 + 85*u - 160')
+//[xk, k] = falsa_posicao(f, 4, 5.0, 1e-6, 1e-6, 100);
+
+printf("PROBLEMA 3\n");
+deff('y = f(d)', 'y = 25*d^2 + log(d) - 1.5')
+[xk, k] = falsa_posicao(f, 0.3, 0.4, 1e-6, 1e-6, 100);
 
 //-------------Problema 1.1: Obter uma aproximação às raízes das funções----------------
 //1. 𝐟(𝐱) = 𝐱^𝟐 − 𝟑 no intervalo [𝟏; 𝟐], com 𝛜 = 𝟏𝟎**-6

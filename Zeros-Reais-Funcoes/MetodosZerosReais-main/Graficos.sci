@@ -83,6 +83,20 @@ function gerarGraficoRad()
 
 endfunction
 
+//printf("PROBLEMA 1 \n");
+//deff('y = f(x)', 'y = 162.5*x^3 - 243.75*x^2 + 130*x - 43.75')
+//gerarGrafico(f, -2, 3, 0, 1, 0.958381, "162.5*x^3 - 243.75*x^2 + 130*x - 43.75");
+
+
+printf("PROBLEMA 2");
+deff('y = f(u)', 'y = 4*u^3 - 30*u^2 + 85*u - 160')
+gerarGrafico(f, 0, 7, 4, 5, 4.811275, "4*u^3 - 30*u^2 + 85*u - 160");
+
+printf("PROBLEMA 3\n");
+deff('y = f(d)', 'y = 25*d^2 + log(d) - 1.5')
+gerarGrafico(f, 0.1, 1, 0.3, 0.4, 0.324135, "25*d^2 + log(d) - 1.5");
+
+
 //-------------Problema 1.1: Obter uma aproximação às raízes das funções----------------
 //1. 𝐟(𝐱) = 𝐱^𝟐 − 𝟑 no intervalo [𝟏; 𝟐], com 𝛜 = 𝟏𝟎**-6
 printf("PROBLEMA 1.1 NÚMERO 1\n");
