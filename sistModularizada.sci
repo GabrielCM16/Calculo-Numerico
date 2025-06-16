@@ -11,7 +11,8 @@ printf('\n INTERPOLAÇÃO POR SISTEMA DE EQUAÇÕES - Ver. MODULARIZADA \n\n');
 
 exec("Gauss.sce", -1);
 exec("Vander_matrix.sce", -1);
-exec("avaliar_polinomio.sce", -1);
+exec("Avaliar_polinomio.sce", -1);
+exec("Plotar_interpolador.sce", -1);
 
 // [1] entrada de dados
 
