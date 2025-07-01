@@ -6,7 +6,7 @@ function centrada_2a_ordem(X, Y, k, derivada_1a_exata, derivada_2a_exata)
     // derivada_2a_exata: valor exato da 2a derivada
     
     h1 = abs(X(k+1) - X(k));
-    h2 = abs(X(k) = X(k-1));
+    h2 = abs(X(k) - X(k-1));
     h = h1 + h2; 
     derivada_numerica = (Y(k+1) - Y(k)) / h;
     printf("\n///////////////////////////////////////////////////////\n");
