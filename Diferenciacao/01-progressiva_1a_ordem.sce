@@ -1,4 +1,4 @@
-function Centrada_2a_ordem_1a(X, Y, k, derivada_1a_exata, derivada_2a_exata)
+function progressiva_1a_ordem(X, Y, k, derivada_1a_exata, derivada_2a_exata)
     // X: pontos x
     // Y: pontos y
     // k: indice do ponto a ser avaliado

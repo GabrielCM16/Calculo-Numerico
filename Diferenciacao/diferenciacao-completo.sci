@@ -34,19 +34,19 @@ printf("\n n>>> Regressiva 1a ordem\n");
 regressiva_1a_ordem(X, Y, k, derivada_1a_exata, derivada_2a_exata);
 
 printf("\n n>>> Centrada 2a ordem\n");
-centrada_2a_ordem(X, Y, k, derivada_1a_exata, derivada_3a_exata);
+Centrada_2a_Ordem_1a(X, Y, k, derivada_1a_exata, derivada_3a_exata); //ta errado o resultado
 
 printf("\n n>>> Centrada 2a ordem - 2a derivada\n");
 centrada_2a_ordem_2aderv(X, Y, k, derivada_2a_exata, derivada_4a_exata);
 
 printf("\n n>>> Lagrange 1o caso\n");
-lagrange_1o_caso(X, Y, k, derivada_1a_exata);
+lagrange_1o_caso(X, Y, k, derivada_1a_exata); //22.032310
 
 printf("\n n>>> Lagrange 2o caso\n");
-lagrange_2o_caso(X, Y, k, derivada_1a_exata);
+lagrange_2o_caso(X, Y, k, derivada_1a_exata); //22.228790
 
 printf("\n n>>> Lagrange 3o caso\n");
-lagrange_3o_caso(X, Y, k, derivada_1a_exata);
+lagrange_3o_caso(X, Y, k, derivada_1a_exata); //22.054525
 
 printf("\n FIM DIFERENCICAO NUMERICA\n");
 

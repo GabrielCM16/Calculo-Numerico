@@ -1,4 +1,4 @@
-function centrada_2a_ordem(X, Y, k, derivada_1a_exata, derivada_2a_exata)
+function centrada_2a_ordem_2aderv(X, Y, k, derivada_1a_exata, derivada_2a_exata)
     // X: pontos x
     // Y: pontos y
     // k: indice do ponto a ser avaliado

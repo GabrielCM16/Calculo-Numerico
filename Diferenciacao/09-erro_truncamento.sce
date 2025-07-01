@@ -1,4 +1,4 @@
-function erro_truncamentoP(h, derivada_2a_exata)
+function erro_truncamento_P(h, derivada_2a_exata)
     error_trun = abs(- (h/2) * derivada_2a_exata);
     printf("Erro de truncamento: (progressiva 1a ordem): |-(h/2) * derivada_2a_exata| = %.6f\n", error_trun);
 endfunction
