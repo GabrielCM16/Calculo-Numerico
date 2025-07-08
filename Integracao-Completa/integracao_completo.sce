@@ -4,17 +4,17 @@ printf("\n Integracao completa - modulo completo \n");
 
 exec("01-trapezio_dados.sce", -1);
 exec("02-simpson_1_3_dados.sce", -1);
-exec("g03-simpson_3_8_dados.sce", -1);
+exec("03-simpson_3_8_dados.sce", -1);
 exec("04-trapezio_funcao.sce", -1);
 
 //exemplo 5.7 slides
 X = [0,2,4,6]
-Y = [1,9,-67,217]
+Y = [1,9,-65,217]
 
-integral_exata =  37.5
+integral_exata = 37.5;
 
 printf("\n Metodo do trapezio Generalizado (dados tabulados): \n");
-Trapezio_Dados(X, Y integral_exata);
+Trapezio_Dados(X, Y, integral_exata);
 
 printf("\n Metodo de Simpson 1/3 (dados tabulados): \n");
 Simpson_1_3_Dados(X, Y, integral_exata);
